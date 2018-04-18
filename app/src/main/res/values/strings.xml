@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="Welcome">Welcome to Tic-Tac-Toe</string>
+    <string name="choose_board">Choose your board</string>
+    <string name="three_by_three_board">3 x 3</string>
+    <string name="five_by_five_board">5 x 5</string>
+    <string name="player_x">Player X</string>
+    <string name="player_o">Player O</string>
+    <string name="draw">Draw</string>
+    <string name="reset">RESET BOARD</string>
+    <string name="player_turn">Player Turn</string>
+    <string name="new_game">NEW GAME</string>
+</resources>

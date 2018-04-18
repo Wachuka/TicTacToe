@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/player_X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:text="@string/player_x"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/x_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop= "true"
+        android:layout_toRightOf="@id/player_X"
+        android:layout_toEndOf="@id/player_X"
+        android:layout_margin="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:text="@string/draw"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/draw_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/draw"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/draw"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/player_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/O_points"
+        android:layout_toStartOf="@id/O_points"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:text="@string/player_o"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/O_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/player_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/draw_points"
+        android:padding="8dp"
+        android:text="@string/player_turn"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/board_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/player_turn"
+        android:orientation="vertical"
+
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/GridStyle"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/button4"
+                style="@style/GridStyle"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/button5"
+                style="@style/GridStyle"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/GridStyle"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/new_game"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/new_game" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
